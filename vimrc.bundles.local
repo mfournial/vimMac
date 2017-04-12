@@ -1,0 +1,4 @@
+ Plugin 'itchyny/lightline.vim'
+ Plugin 'terryma/vim-multiple-cursors'
+ Plugin 'ervandew/supertab'
+ Plugin 'neovimhaskell/haskell-vim'
