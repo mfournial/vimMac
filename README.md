@@ -19,5 +19,4 @@ Classic I would say, the default shortcuts work fine with what we already have.
 > So many people use Vim and Ruby (was literally in every website I was going through), is Ruby really the best?
 
 # Known bugs and issues
-The maximum-awesome integration can fail at any moment if some plugins that I don't know about update 
-in the background 
+The maximum-awesome integration will fail to update some plugins. It's a git issue that just need a bit of file permissions tweeking will do it if I have time 
