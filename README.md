@@ -22,14 +22,13 @@ Now let's move all the files inside the .vim folder
 `$ rm -r macVim`  
 
 But nothing works yet because Vim look for the files in the home directory, let's create some links to solve that problem  
-`$ ln -s .vimrc .vim/vimrc  
-ln -s .vimrc.bunldes .vim/vimrc.bundles  
-ln -s .vimrc.bundles.local .vim/vimrc.bundles.local  
-ln -s .vimrc.local .vim/vimrc.local`  
+`$ ln -s .vimrc .vim/vimrc`  
+`ln -s .vimrc.bunldes .vim/vimrc.bundles`
+`ln -s .vimrc.bundles.local .vim/vimrc.bundles.local`  
+`ln -s .vimrc.local .vim/vimrc.local`  
   
 You should be set!  
 `$ vi`  
-
 
 # What you can't get out of the box in this repo
 ## Font
