@@ -1,6 +1,11 @@
 " don't bother with vi compatibility
 set nocompatible
 
+" Saves the hidden files somewhere else
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
+set undodir=~/.vim/undo//
+
 " enable syntax highlighting
 syntax enable
 colorscheme monokai
