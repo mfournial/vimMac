@@ -5,6 +5,32 @@ with my original [Linux configuration](https://github.com/mfournialvimLinux).
 
 The result is a very functional Vim environment that benefits from the iTerm2 functions
 
+# Installation
+Go to your home directory
+`$ cd ~`
+Then clone this repository
+`$ git clone https://www.github.com/mfournial/vimMac`
+
+If your .vim folder *doesn't exists* yet:
+`$ mkdir .vim`
+Otherwise, make sure the file that are in your existing directory are not going to conflict with these, in doubt:
+`$ mkdir .vimOld`
+`$ mv .vim/* .vimOld/`
+
+Now let's move all the files inside the .vim folder
+`$ mv vimMac/* .vim/`
+`$ rm -r macVim`
+
+But nothing works yet because Vim look for the files in the home directory, let's create some links to solve that problem
+`$ ln -s .vimrc .vim/vimrc
+ln -s .vimrc.bunldes .vim/vimrc.bundles
+ln -s .vimrc.bundles.local .vim/vimrc.bundles.local
+ln -s .vimrc.local .vim/vimrc.local`
+
+You should be set!
+`$ vi`
+
+
 # What you can't get out of the box in this repo
 ## Font
 I'm using a nice sleek font called [iosevka](https://github.com/be5invis/Iosevka) that is very thin and
