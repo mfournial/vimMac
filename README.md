@@ -1,11 +1,11 @@
-Vim configuration file for *macOS*
+# Vim configuration file for *macOS*
 
 Made from the nice enough [maximum-awesome](https://github.com/square/maximum-awesome) and merging it 
 with my original [Linux configuration](https://github.com/mfournialvimLinux).
 
 The result is a very functional Vim environment that benefits from the iTerm2 functions
 
-# Installation
+## Installation
 Go to your home directory  
 `$ cd ~`  
 Then clone this repository
@@ -30,18 +30,18 @@ But nothing works yet because Vim look for the files in the home directory, let'
 You should be set!  
 `$ vi`  
 
-# What you can't get out of the box in this repo
-## Font
+## What you can't get out of the box in this repo
+### Font
 I'm using a nice sleek font called [iosevka](https://github.com/be5invis/Iosevka) that is very thin and
 horizontally condensed, which is essential for me
-## Lightbar
+### Lightbar
 The cool separators takens from the powerbar plugin for Vim require some work, it's the worse really.
 Unless you know how to use Fontpatcher on Mac I recommend the other one they talk about on Lightbar doc,
 I used it for Linux without sudo rights and it worked just fine.
-## iTerm2
+### iTerm2
 Classic I would say, the default shortcuts work fine with what we already have.
+### Syntax and compiling
+I use Haskell and having to compile it every time you want to type-check can be a pain. The best solution for that is to use the ghc-mod package and turn vim into a Haskell IDE if I need to. Configuration can be difficult and I'll try to push it at some point.  
 
-> So many people use Vim and Ruby (was literally in every website I was going through), is Ruby really the best?
-
-# Known bugs and issues
+## Known bugs and issues
 The maximum-awesome integration will fail to update some plugins. It's a git issue that just need a bit of file permissions tweeking will do it if I have time 
