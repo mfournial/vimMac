@@ -2,3 +2,5 @@
  Plugin 'terryma/vim-multiple-cursors'
  Plugin 'ervandew/supertab'
  Plugin 'neovimhaskell/haskell-vim'
+ Plugin 'eagletmt/ghcmod-vim'
+ Plugin 'Shougo/vimproc.vim'
