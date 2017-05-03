@@ -25,14 +25,15 @@ endif
 call vundle#end()
 
 " ensure ftdetect et al work by including this after the Vundle stuff
+filetype indent on
 filetype plugin indent on
 
 set autoindent
 set autoread                                                 " reload files when changed on disk, i.e. via `git checkout`
-set backspace=2                                              " Fix broken backspace in some setups
+set backspace=2                                              " fix broken backspace in some setups
 set backupcopy=yes                                           " see :help crontab
 set clipboard=unnamed                                        " yank and paste with the system clipboard
-set colorcolumn=80
+set colorcolumn=80                                           " good for most languages
 set encoding=utf-8
 set expandtab                                                " expand tabs to spaces
 set ignorecase                                               " case-insensitive search
@@ -40,9 +41,9 @@ set incsearch
 set hidden
 set history=120
 set hlsearch
-" set laststatus=2                                             " always show statusline
+" set laststatus=2                                           " always show statusline
 set noshowmode
-" set list                                                     " show trailing whitespace
+" set list                                                   " show trailing whitespace
 " set listchars=tab:▸\ ,trail:▫
 set number                                                   " show line numbers
 set ruler                                                    " show where you are
@@ -106,6 +107,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_java_javac_config_file_enabled = 1
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 " if executable('ag')
